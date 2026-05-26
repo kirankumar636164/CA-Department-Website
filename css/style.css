@@ -1,0 +1,154 @@
+/* ================= RESET ================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ================= THEME VARIABLES ================= */
+:root {
+  --bg: #070b14;
+  --bg-soft: #0d1526;
+  --text: #e8f0fe;
+  --muted: #9fb3c8;
+  --accent: #00e5ff;
+  --accent-glow: rgba(0, 229, 255, 0.4);
+  --nav-bg: rgba(7, 11, 20, 0.8);
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-soft: #f5f7fb;
+  --text: #111;
+  --muted: #555;
+  --accent: #007bff;
+  --accent-glow: rgba(0, 123, 255, 0.3);
+  --nav-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* ================= BODY ================= */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, var(--bg-soft), var(--bg) 70%);
+  color: var(--text);
+  overflow-x: hidden;
+
+  /* FIX for fixed navbar */
+  padding-top: 80px;
+}
+
+/* ================= BACKGROUND GLOW ================= */
+body::before {
+  content: "";
+  position: fixed;
+  top: -120px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ================= TYPOGRAPHY ================= */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  margin: 0;
+}
+
+p {
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ================= LINKS ================= */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= BUTTON FIX ================= */
+.btn {
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--accent-glow);
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+}
+
+.hero-title span {
+  color: var(--accent);
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+/* ================= VIDEO ================= */
+.video-container {
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 229, 255, 0.1);
+}
+
+.homepage-hero-video__flex-video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 40px var(--accent-glow);
+}
+
+/* ================= SECTION SPACING ================= */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}

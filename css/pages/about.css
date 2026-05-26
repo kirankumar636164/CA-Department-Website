@@ -1,0 +1,83 @@
+/* HERO */
+.about-hero {
+  padding: 60px 0 40px;
+text-align: center;
+  max-width: 800px;
+  margin: 0 auto;  background: radial-gradient(circle at center, rgba(0,229,255,0.08), transparent 70%);
+}
+
+.about-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.about-hero p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+/* MAIN SECTION */
+.about-main {
+  padding: 60px 0;
+}
+
+.about-main h2 {
+  margin-bottom: 15px;
+}
+
+.about-main p {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+/* IMAGE */
+.about-main img {
+  border-radius: 12px;
+}
+
+/* VALUES */
+.about-values {
+  padding: 60px 0;
+}
+
+.value-box {
+  background: var(--bg-soft);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,229,255,0.1);
+  transition: 0.3s;
+}
+
+.value-box:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.value-box h4 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.value-box p {
+  color: var(--muted);
+}
+
+/* STATS */
+.about-stats {
+  padding: 60px 0;
+}
+
+.about-stats h3 {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.about-stats p {
+  color: var(--muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .about-main {
+    text-align: center;
+  }
+}

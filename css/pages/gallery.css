@@ -1,0 +1,28 @@
+/* HERO */
+.gallery-hero {
+  padding: 60px 0 40px;
+  text-align: center;
+  background: radial-gradient(circle at center, rgba(0,229,255,0.08), transparent 70%);
+}
+
+.gallery-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.gallery-hero p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* SECTION */
+.gallery-section {
+  padding: 60px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 40px 0;
+  }
+}

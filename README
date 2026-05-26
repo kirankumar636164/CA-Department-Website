@@ -1,0 +1,164 @@
+# 🚀 CompApps Department Website
+
+## 📌 Overview
+
+The **CompApps Department Website** is a modern, responsive web application designed to showcase the activities, achievements, and opportunities within the Computer Applications Department.
+
+This project highlights:
+
+* Department overview and mission
+* Events and workshops
+* Gallery of activities
+* Student engagement (Join/Contact)
+* Clean UI with dark/light theme support
+
+The goal of this website is to provide a **professional, user-friendly platform** for students and visitors to explore the department.
+
+---
+
+## ✨ Features
+
+* 🌗 Dark / Light Mode Toggle
+* 📱 Fully Responsive Design (Mobile + Desktop)
+* 🎬 Smooth Scroll Animations (AOS)
+* 🧩 Reusable Components (Navbar & Footer)
+* 🖼️ Interactive Gallery with Hover Effects
+* 📅 Event Listings with Clean UI
+* 📬 Contact / Join Form Section
+* 🎨 Modern UI with Glassmorphism & Glow Effects
+
+---
+
+## 🛠️ Technologies Used
+
+### 🔹 Frontend
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+
+### 🔹 Frameworks & Libraries
+
+* Bootstrap 5 (Layout & Responsiveness)
+* Bootstrap Icons
+* AOS (Animate On Scroll Library)
+
+### 🔹 Concepts Implemented
+
+* Component-based structure (Navbar & Footer loading)
+* CSS Variables (Design System)
+* Theme Switching (Dark/Light Mode)
+* Responsive Grid System
+* Modular CSS Architecture
+
+---
+
+## 📁 Project Structure
+
+```
+compapps-website/
+│
+├── index.html
+├── about.html
+├── events.html
+├── gallery.html
+├── contact.html
+│
+├── components/
+│   ├── navbar.html
+│   └── footer.html
+│
+├── css/
+│   ├── style.css
+│   ├── components.css
+│   └── pages/
+│       ├── about.css
+│       ├── events.css
+│       ├── gallery.css
+│       └── contact.css
+│
+├── js/
+│   ├── main.js
+│   └── theme.js
+│
+├── assets/
+│   ├── images/
+│   └── video/
+│
+└── README.md
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### ⚠️ Important
+
+This project uses `fetch()` for loading components.
+So it **will NOT work if opened directly (file://)**.
+
+---
+
+### ✅ Step 1: Extract the ZIP
+
+* Unzip the project folder
+
+---
+
+### ✅ Step 2: Open with Live Server (Recommended)
+
+#### Option A (VS Code)
+
+1. Open folder in VS Code
+2. Install **Live Server Extension**
+3. Right click `index.html`
+4. Click **"Open with Live Server"**
+
+---
+
+### ✅ Option B (Node.js)
+
+If you have Node installed:
+
+```bash
+npx serve
+```
+
+Then open the provided localhost link.
+
+---
+
+## 👨‍💻 Developer Details
+
+**Name:** Kiran Kumar B
+**Role:** MCA Student & MERN Stack Developer
+**Focus:** Building scalable, modern web applications
+
+---
+
+## 🎯 Project Purpose
+
+This project was built to:
+
+* Practice real-world frontend development
+* Implement clean architecture and reusable components
+* Develop strong UI/UX design skills
+* Transition from basic projects to structured applications
+
+---
+
+## 📌 Future Improvements
+
+* Form validation with backend integration
+* Event filtering system
+* Gallery lightbox view
+* Admin dashboard (advanced feature)
+* Deployment (Netlify / Vercel)
+
+---
+
+## ⭐ Final Note
+
+This project represents a transition from **basic web development** to **structured, scalable frontend architecture**.
+
+---
