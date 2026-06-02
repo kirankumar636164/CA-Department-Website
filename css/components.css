@@ -80,6 +80,21 @@
   }
 }
 
+/* MOBILE NAV TOGGLER */
+.navbar-toggler {
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  color: var(--text);
+}
+
 /* ================= FOOTER ================= */
 .footer-section {
   background: linear-gradient(to top, var(--bg-soft), var(--bg));
