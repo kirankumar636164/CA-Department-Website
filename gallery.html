@@ -20,136 +20,565 @@
 <body>
 
 <!-- ================= NAVBAR ================= -->
-
-  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+<nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
 
     <div class="container">
 
-      <!-- LOGO -->
-      <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
 
-        <div class="logo-box">
-          <i class="bi bi-cpu-fill"></i>
-        </div>
+            <span class="logo-box">
+                <i class="bi bi-cpu-fill"></i>
+            </span>
 
-        <span class="logo-text">
-          CompApps
-        </span>
+            CompApps
 
-      </a>
+        </a>
 
-      <!-- MOBILE TOGGLE -->
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <button class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
 
-        <i class="bi bi-list"></i>
-
-      </button>
-
-      <!-- NAV MENU -->
-      <div class="collapse navbar-collapse" id="navMenu">
-
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-
-          <li class="nav-item">
-            <a class="nav-link active" href="#heroCarousel">
-              Home
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#about">
-              About
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#events">
-              Events
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery">
-              Gallery
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">
-              Join
-            </a>
-          </li>
-
-        </ul>
-
-        <!-- THEME BUTTON -->
-        <button id="themeToggle">
-
-          <i class="bi bi-moon-stars-fill"></i>
+            <i class="bi bi-list"></i>
 
         </button>
 
-      </div>
+        <div class="collapse navbar-collapse" id="navMenu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="events.html">
+                        Events
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="gallery.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <button id="themeToggle"
+                    class="ms-lg-3">
+
+                <i class="bi bi-moon-stars-fill"></i>
+
+            </button>
+
+        </div>
 
     </div>
 
-  </nav>
+</nav>
 
-<!-- HERO -->
-<section class="gallery-hero text-center">
-  <div class="container">
-    <h1>Gallery</h1>
-    <p>Moments from events, workshops, and achievements.</p>
-  </div>
-</section>
+<!-- =====================================
+     GALLERY HERO
+===================================== -->
 
-<!-- GALLERY -->
-<section class="gallery-section">
-  <div class="container">
+<section class="gallery-hero">
 
-    <div class="row g-3">
+    <div class="container">
 
-      <!-- IMAGE -->
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="assets/images/Gallery/Group1.jfif" alt="">
+        <div class="gallery-hero-content">
+
+            <span class="section-badge"
+                  data-aos="fade-up">
+
+                GALLERY
+
+            </span>
+
+            <h1 class="gallery-title"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                Capturing Moments,
+                Celebrating Success
+
+            </h1>
+
+            <p class="gallery-subtitle"
+               data-aos="fade-up"
+               data-aos-delay="200">
+
+                Explore workshops, hackathons,
+                seminars, project expos, and
+                memorable moments from the
+                Department of Computer Applications.
+
+            </p>
+
         </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="assets/images/Gallery/Certified People.jfif" alt="">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="assets/images/Gallery/Certified People2.jfif" alt="">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="assets/images/Gallery/hackathon.jfif" alt="">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="assets/images/Gallery/seminar.jfif" alt="">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="assets/images/Gallery/Team work.jfif" alt="">
-        </div>
-      </div>
 
     </div>
 
-  </div>
 </section>
+
+
+<!-- =====================================
+     GALLERY STATS
+===================================== -->
+
+<section class="gallery-stats">
+
+    <div class="container">
+
+        <div class="row g-4 text-center">
+
+            <div class="col-6 col-lg-3"
+                 data-aos="fade-up">
+
+                <div class="gallery-stat-card">
+
+                    <h2>500+</h2>
+
+                    <p>Photos</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 col-lg-3"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <div class="gallery-stat-card">
+
+                    <h2>30+</h2>
+
+                    <p>Events</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 col-lg-3"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <div class="gallery-stat-card">
+
+                    <h2>1200+</h2>
+
+                    <p>Students</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-6 col-lg-3"
+                 data-aos="fade-up"
+                 data-aos-delay="300">
+
+                <div class="gallery-stat-card">
+
+                    <h2>10+</h2>
+
+                    <p>Awards</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     GALLERY FILTERS
+===================================== -->
+
+<section class="gallery-filters">
+
+    <div class="container">
+
+        <div class="filter-buttons justify-content-center">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="workshop">
+
+                Workshops
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="hackathon">
+
+                Hackathons
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="seminar">
+
+                Seminars
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="project">
+
+                Projects
+
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="achievement">
+
+                Achievements
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     GALLERY GRID
+===================================== -->
+
+<section class="gallery-grid-section">
+
+    <div class="container">
+
+        <div class="gallery-grid">
+
+            <!-- IMAGE 1 -->
+            <div class="gallery-item tall"
+                 data-category="workshop"
+                 data-aos="zoom-in">
+
+                <img src="assets/images/gallery/workshop1.jpg"
+                     alt="Workshop">
+
+                <div class="gallery-overlay">
+
+                    <h5>AI Workshop</h5>
+
+                    <p>Hands-on AI Learning</p>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE 2 -->
+            <div class="gallery-item"
+                 data-category="hackathon"
+                 data-aos="zoom-in">
+
+                <img src="assets/images/gallery/hackathon1.jpg"
+                     alt="Hackathon">
+
+                <div class="gallery-overlay">
+
+                    <h5>Hackathon 2026</h5>
+
+                    <p>24 Hour Coding Event</p>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE 3 -->
+            <div class="gallery-item wide"
+                 data-category="seminar"
+                 data-aos="zoom-in">
+
+                <img src="assets/images/gallery/seminar1.jpg"
+                     alt="Seminar">
+
+                <div class="gallery-overlay">
+
+                    <h5>Cloud Seminar</h5>
+
+                    <p>Industry Expert Session</p>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE 4 -->
+            <div class="gallery-item"
+                 data-category="project"
+                 data-aos="zoom-in">
+
+                <img src="assets/images/gallery/project1.jpg"
+                     alt="Project Expo">
+
+                <div class="gallery-overlay">
+
+                    <h5>Project Expo</h5>
+
+                    <p>Student Innovations</p>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE 5 -->
+            <div class="gallery-item tall"
+                 data-category="achievement"
+                 data-aos="zoom-in">
+
+                <img src="assets/images/gallery/achievement1.jpg"
+                     alt="Achievement">
+
+                <div class="gallery-overlay">
+
+                    <h5>Achievement</h5>
+
+                    <p>Department Recognition</p>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE 6 -->
+            <div class="gallery-item"
+                 data-category="workshop"
+                 data-aos="zoom-in">
+
+                <img src="assets/images/gallery/workshop2.jpg"
+                     alt="Workshop">
+
+                <div class="gallery-overlay">
+
+                    <h5>UI/UX Workshop</h5>
+
+                    <p>Creative Design Session</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     GALLERY MODAL
+===================================== -->
+
+<div class="modal fade"
+     id="galleryModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+
+        <div class="modal-content gallery-modal">
+
+            <div class="modal-body p-0">
+
+                <button class="btn-close modal-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+                <img id="modalGalleryImage"
+                     src=""
+                     alt="Gallery Image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =====================================
+     FEATURED MEMORIES
+===================================== -->
+
+<section class="featured-memories">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+                HIGHLIGHTS
+            </span>
+
+            <h2 class="section-title">
+                Featured Memories
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+
+            <div class="col-lg-4"
+                 data-aos="fade-up">
+
+                <div class="memory-card">
+
+                    <img src="assets/images/gallery/hackathon-featured.jpg"
+                         alt="Hackathon Winners">
+
+                    <div class="memory-content">
+
+                        <h4>
+                            Hackathon Champions
+                        </h4>
+
+                        <p>
+                            Students secured top positions
+                            in the annual coding challenge.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="col-lg-4"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <div class="memory-card">
+
+                    <img src="assets/images/gallery/project-featured.jpg"
+                         alt="Project Expo">
+
+                    <div class="memory-content">
+
+                        <h4>
+                            Project Expo
+                        </h4>
+
+                        <p>
+                            Innovative projects showcased
+                            by final year students.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="col-lg-4"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <div class="memory-card">
+
+                    <img src="assets/images/gallery/achievement-featured.jpg"
+                         alt="Achievement">
+
+                    <div class="memory-content">
+
+                        <h4>
+                            Department Achievement
+                        </h4>
+
+                        <p>
+                            Recognized for excellence
+                            in academic performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     CTA
+===================================== -->
+
+<section class="gallery-cta">
+
+    <div class="container">
+
+        <div class="cta-box"
+             data-aos="zoom-in">
+
+            <h2>
+                Want To Be Part Of These Memories?
+            </h2>
+
+            <p>
+
+                Join the Department of Computer
+                Applications and become part of
+                future workshops, hackathons,
+                projects and achievements.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+
+                    Join Now
+
+                </a>
+
+                <a href="events.html"
+                   class="btn btn-outline-primary">
+
+                    Explore Events
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <!-- FOOTER -->
 <footer class="footer-section">
@@ -201,6 +630,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/theme.js"></script>
+<script src="js/gallery.js"></script>
 
 </body>
 </html>
