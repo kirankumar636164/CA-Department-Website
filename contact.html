@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,93 +14,642 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/contact.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div id="navbar"></div>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
-<!-- HERO -->
-<section class="contact-hero text-center">
-  <div class="container">
-    <h1>Join Our Department</h1>
-    <p>Start your journey in technology today.</p>
-  </div>
-</section>
+    <div class="container">
 
-<!-- CONTACT -->
-<section class="contact-section">
-  <div class="container">
-    <div class="row g-5 align-items-center">
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">
 
-      <!-- INFO -->
-      <div class="col-lg-5">
-        <h2>Get in Touch</h2>
-        <p>Have questions or want to join? Fill the form and we’ll get back to you.</p>
-
-        <div class="contact-info">
-          <p><i class="bi bi-geo-alt-fill"></i> Bengaluru, India</p>
-          <p><i class="bi bi-envelope-fill"></i> compapps@college.edu</p>
-          <p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
+        <div class="logo-box">
+          <i class="bi bi-cpu-fill"></i>
         </div>
+
+        <span class="logo-text">
+          CompApps
+        </span>
+
+      </a>
+
+      <!-- MOBILE TOGGLE -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+
+        <i class="bi bi-list"></i>
+
+      </button>
+
+      <!-- NAV MENU -->
+      <div class="collapse navbar-collapse" id="navMenu">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">
+              Events
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">
+              Gallery
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">
+              Join
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- THEME BUTTON -->
+        <button id="themeToggle">
+
+          <i class="bi bi-moon-stars-fill"></i>
+
+        </button>
+
       </div>
 
-      <!-- FORM -->
-      <div class="col-lg-7">
-        <form class="contact-form">
+    </div>
 
-          <div class="row g-3">
+  </nav>
 
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Full Name" required>
+
+  <!-- HERO -->
+  <!-- =====================================
+     CONTACT HERO
+===================================== -->
+
+  <section class="contact-hero">
+
+    <div class="container">
+
+      <div class="contact-hero-content">
+
+        <span class="section-badge" data-aos="fade-up">
+
+          CONTACT US
+
+        </span>
+
+        <h1 class="contact-title" data-aos="fade-up" data-aos-delay="100">
+
+          Let's Connect &
+          Build Your Future
+
+        </h1>
+
+        <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="200">
+
+          Have questions about admissions,
+          programs, events, or career opportunities?
+          We'd love to hear from you.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+     CONTACT INFO
+===================================== -->
+
+  <section class="contact-info-section">
+
+    <div class="container">
+
+      <div class="row g-4">
+
+        <!-- LOCATION -->
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+
+          <div class="info-card">
+
+            <i class="bi bi-geo-alt-fill"></i>
+
+            <h4>Location</h4>
+
+            <p>
+              Bengaluru, Karnataka,
+              India
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- EMAIL -->
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="info-card">
+
+            <i class="bi bi-envelope-fill"></i>
+
+            <h4>Email</h4>
+
+            <p>
+              compapps@college.edu
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- PHONE -->
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="info-card">
+
+            <i class="bi bi-telephone-fill"></i>
+
+            <h4>Phone</h4>
+
+            <p>
+              +91 98765 43210
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- HOURS -->
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="info-card">
+
+            <i class="bi bi-clock-fill"></i>
+
+            <h4>Office Hours</h4>
+
+            <p>
+              Mon - Sat
+              9:00 AM - 5:00 PM
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <!-- =====================================
+     CONTACT FORM
+===================================== -->
+
+  <section class="contact-form-section">
+
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+          <div class="contact-form-wrapper" data-aos="fade-up">
+
+            <div class="text-center mb-5">
+
+              <span class="section-badge">
+
+                SEND MESSAGE
+
+              </span>
+
+              <h2 class="section-title">
+
+                Get In Touch
+
+              </h2>
+
+              <p class="form-subtitle">
+
+                Fill out the form below and
+                we'll get back to you soon.
+
+              </p>
+
             </div>
 
-            <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="Email Address" required>
+            <!-- SUCCESS MESSAGE -->
+
+            <div id="successMessage" class="alert alert-success d-none">
+
+              Form submitted successfully!
+
             </div>
 
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Phone Number">
+            <!-- FORM -->
+
+            <form id="contactForm">
+
+              <div class="row g-4">
+
+                <!-- NAME -->
+
+                <div class="col-md-6">
+
+                  <label class="form-label">
+
+                    Full Name
+
+                  </label>
+
+                  <input type="text" id="name" class="form-control">
+
+                  <small class="error-text" id="nameError">
+                  </small>
+
+                </div>
+
+                <!-- EMAIL -->
+
+                <div class="col-md-6">
+
+                  <label class="form-label">
+
+                    Email Address
+
+                  </label>
+
+                  <input type="email" id="email" class="form-control">
+
+                  <small class="error-text" id="emailError">
+                  </small>
+
+                </div>
+
+                <!-- PHONE -->
+
+                <div class="col-md-6">
+
+                  <label class="form-label">
+
+                    Phone Number
+
+                  </label>
+
+                  <input type="tel" id="phone" class="form-control">
+
+                  <small class="error-text" id="phoneError">
+                  </small>
+
+                </div>
+
+                <!-- COURSE -->
+
+                <div class="col-md-6">
+
+                  <label class="form-label">
+
+                    Course
+
+                  </label>
+
+                  <select id="course" class="form-select">
+
+                    <option value="">
+                      Select Course
+                    </option>
+
+                    <option>
+                      BCA
+                    </option>
+
+                    <option>
+                      MCA
+                    </option>
+
+                    <option>
+                      BCA (Hons)
+                    </option>
+
+                  </select>
+
+                  <small class="error-text" id="courseError">
+                  </small>
+
+                </div>
+
+                <!-- MESSAGE -->
+
+                <div class="col-12">
+
+                  <label class="form-label">
+
+                    Message
+
+                  </label>
+
+                  <textarea id="message" rows="5" class="form-control">
+                                </textarea>
+                  <small id="messageCount">
+                    0 / 500
+                  </small>
+                  <small class="error-text" id="messageError">
+                  </small>
+
+                </div>
+
+                <!-- BUTTON -->
+
+                <div class="col-12 text-center">
+
+                  <button type="submit" class="btn btn-primary btn-lg">
+
+                    Submit Application
+
+                  </button>
+
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-section">
+
+    <div class="container">
+
+      <div class="row g-5">
+
+        <!-- ================= BRAND ================= -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <a class="footer-brand" href="#">
+
+            <div class="logo-box">
+
+              <i class="bi bi-cpu-fill"></i>
+
             </div>
 
-            <div class="col-md-6">
-              <select class="form-control">
-                <option selected disabled>Select Course</option>
-                <option>BCA</option>
-                <option>MCA</option>
-                <option>BCA (Hons)</option>
-              </select>
+            <span>
+
+              CompApps
+
+            </span>
+
+          </a>
+
+          <p class="footer-text">
+
+            Empowering students with modern
+            technology skills, practical learning,
+            innovation, and real-world software development experience.
+
+          </p>
+
+          <!-- SOCIAL -->
+
+          <div class="footer-social">
+
+            <a href="#">
+
+              <i class="bi bi-facebook"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-instagram"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-linkedin"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-github"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- ================= QUICK LINKS ================= -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <h5 class="footer-title">
+
+            Quick Links
+
+          </h5>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="events.html">
+                Events
+              </a>
+            </li>
+
+            <li>
+              <a href="gallery.html">
+                Gallery
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- ================= PROGRAMS ================= -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="footer-title">
+
+            Programs
+
+          </h5>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="#">
+                BCA
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                MCA
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                BCA (Hons)
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Workshops
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Certifications
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- ================= CONTACT ================= -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="footer-title">
+
+            Contact Info
+
+          </h5>
+
+          <div class="footer-contact">
+
+            <div class="footer-contact-item">
+
+              <i class="bi bi-geo-alt-fill"></i>
+
+              <span>
+                Bengaluru, India
+              </span>
+
             </div>
 
-            <div class="col-12">
-              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            <div class="footer-contact-item">
+
+              <i class="bi bi-envelope-fill"></i>
+
+              <span>
+                compapps@college.edu
+              </span>
+
             </div>
 
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary w-100">
-                Submit Application
-              </button>
+            <div class="footer-contact-item">
+
+              <i class="bi bi-telephone-fill"></i>
+
+              <span>
+                +91 98765 43210
+              </span>
+
             </div>
 
           </div>
 
-        </form>
+        </div>
+
+      </div>
+
+      <!-- ================= COPYRIGHT ================= -->
+
+      <div class="footer-bottom">
+
+        <p>
+
+          © 2026 CompApps Department.
+          All Rights Reserved.
+
+        </p>
+
       </div>
 
     </div>
-  </div>
-</section>
 
-<!-- FOOTER -->
-<div id="footer"></div>
+  </footer>
+<button id="scrollTopBtn">
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/theme.js"></script>
+    <i class="bi bi-arrow-up"></i>
+</button>
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/common.js"></script>
 
 </body>
+
 </html>

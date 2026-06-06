@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update icon
     toggle.innerHTML =
-      newTheme === "dark"
+      newTheme === "light"
         ? '<i class="bi bi-moon-stars-fill"></i>'
         : '<i class="bi bi-sun-fill"></i>';
   });
