@@ -9,7 +9,7 @@ const events = [
         category: "Competition",
         date: "15 Aug 2026",
         venue: "Computer Lab Complex",
-        image: "assets/images/events/hackathon.jfif",
+        image: "assets/images/events/hackathon1.jfif",
         description: "24-hour coding challenge where students solve real-world technology problems."
     },
 
@@ -54,7 +54,7 @@ const events = [
         category: "Bootcamp",
         date: "10 Sep 2026",
         venue: "Computer Lab Complex",
-        image: "assets/images/events/datascience.jpg",
+        image: "assets/images/events/DATA-SCIENCE-BOOTCAMP-1.png",
         description: "Introduction to analytics, Python and machine learning."
     },
 
@@ -72,7 +72,7 @@ const events = [
         category: "Competition",
         date: "20 Sep 2026",
         venue: "Computer Lab Complex",
-        image: "assets/images/events/quiz.jpg",
+        image: "assets/images/events/quiz.webp",
         description: "Competitive technical quiz covering modern technologies."
     },
 
@@ -81,7 +81,7 @@ const events = [
         category: "Industry",
         date: "25 Sep 2026",
         venue: "Computer Lab Complex",
-        image: "assets/images/events/startup.jpg",
+        image: "assets/images/events/startup.jfif",
         description: "Entrepreneurs share startup journeys and experiences."
     },
 
@@ -90,7 +90,7 @@ const events = [
         category: "Career",
         date: "01 Oct 2026",
         venue: "Computer Lab Complex",
-        image: "assets/images/events/resume.jpg",
+        image: "assets/images/events/resume.png",
         description: "Build professional resumes and improve interview readiness."
     },
 
@@ -99,7 +99,7 @@ const events = [
         category: "Event",
         date: "10 Oct 2026",
         venue: "Computer Lab Complex",
-        image: "assets/images/events/innovation.jpg",
+        image: "assets/images/events/tech Fest.png",
         description: "Students present innovative ideas and prototypes."
     },
 
@@ -108,7 +108,7 @@ const events = [
         category: "Competition",
         date: "15 Oct 2026",
         venue: "Computer Lab Complex",
-        image: "assets/images/events/coding.jpg",
+        image: "assets/images/events/coding.jfif",
         description: "Competitive programming challenge for students."
     },
 
@@ -126,7 +126,7 @@ const events = [
         category: "Seminar",
         date: "25 Oct 2026",
         venue: "Computer Lab Complex",
-        image: "assets/images/events/devops.jpg",
+        image: "assets/images/events/devops.png",
         description: "Explore CI/CD pipelines and DevOps practices."
     },
 

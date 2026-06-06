@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,535 +14,522 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/events.css">
-<!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-      rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
     <div class="container">
 
-        <a class="navbar-brand" href="index.html">
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">
 
-            <span class="logo-box">
-                <i class="bi bi-cpu-fill"></i>
-            </span>
+        <div class="logo-box">
+          <i class="bi bi-cpu-fill"></i>
+        </div>
 
-            CompApps
+        <span class="logo-text">
+          CompApps
+        </span>
 
-        </a>
+      </a>
 
-        <button class="navbar-toggler border-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navMenu">
+      <!-- MOBILE TOGGLE -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
 
-            <i class="bi bi-list"></i>
+        <i class="bi bi-list"></i>
+
+      </button>
+
+      <!-- NAV MENU -->
+      <div class="collapse navbar-collapse" id="navMenu">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="events.html">
+              Events
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">
+              Gallery
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Join
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- THEME BUTTON -->
+        <button id="themeToggle">
+
+          <i class="bi bi-moon-stars-fill"></i>
 
         </button>
 
-        <div class="collapse navbar-collapse" id="navMenu">
+      </div>
 
-            <ul class="navbar-nav ms-auto align-items-lg-center">
+    </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        Home
-                    </a>
-                </li>
+  </nav>
+  <!-- HERO -->
+  <!-- ================= EVENTS HERO ================= -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">
-                        About
-                    </a>
-                </li>
+  <section class="events-hero">
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="events.html">
-                        Events
-                    </a>
-                </li>
+    <div class="container">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">
-                        Gallery
-                    </a>
-                </li>
+      <div class="events-hero-content">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">
-                        Contact
-                    </a>
-                </li>
+        <span class="section-badge">
+          DEPARTMENT EVENTS
+        </span>
 
-            </ul>
+        <h1 class="events-title">
+          Events & Activities
+        </h1>
 
-            <button id="themeToggle"
-                    class="ms-lg-3">
+        <p class="events-subtitle">
 
-                <i class="bi bi-moon-stars-fill"></i>
+          Discover workshops, hackathons,
+          technical seminars, project expos,
+          and exciting learning opportunities
+          organized by the Department of
+          Computer Applications.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ================= EVENTS CONTROLS ================= -->
+
+  <section class="events-controls">
+
+    <div class="container">
+
+      <div class="row g-3 align-items-center">
+
+        <!-- SEARCH -->
+
+        <div class="col-lg-5">
+
+          <div class="search-box">
+
+            <i class="bi bi-search"></i>
+
+            <input type="text" id="searchInput" class="form-control" placeholder="Search events...">
+
+          </div>
+
+        </div>
+
+        <!-- FILTERS -->
+
+        <div class="col-lg-4">
+
+          <div class="filter-buttons">
+
+            <button class="filter-btn active" data-category="All">
+
+              All
 
             </button>
 
-        </div>
+            <button class="filter-btn" data-category="Workshop">
 
-    </div>
+              Workshop
 
-</nav>
+            </button>
 
-<!-- HERO -->
-<!-- ================= EVENTS HERO ================= -->
+            <button class="filter-btn" data-category="Competition">
 
-<section class="events-hero">
+              Competition
 
-    <div class="container">
+            </button>
 
-        <div class="events-hero-content">
+            <button class="filter-btn" data-category="Seminar">
 
-            <span class="section-badge">
-                DEPARTMENT EVENTS
-            </span>
+              Seminar
 
-            <h1 class="events-title">
-                Events & Activities
-            </h1>
+            </button>
 
-            <p class="events-subtitle">
-
-                Discover workshops, hackathons,
-                technical seminars, project expos,
-                and exciting learning opportunities
-                organized by the Department of
-                Computer Applications.
-
-            </p>
+          </div>
 
         </div>
 
-    </div>
+        <!-- SORT -->
 
-</section>
-<!-- ================= EVENTS CONTROLS ================= -->
+        <div class="col-lg-3">
 
-<section class="events-controls">
+          <select id="sortSelect" class="form-select">
 
-    <div class="container">
+            <option value="default">
 
-        <div class="row g-3 align-items-center">
+              Sort Events
 
-            <!-- SEARCH -->
+            </option>
 
-            <div class="col-lg-5">
+            <option value="az">
 
-                <div class="search-box">
+              A-Z
 
-                    <i class="bi bi-search"></i>
+            </option>
 
-                    <input
-                        type="text"
-                        id="searchInput"
-                        class="form-control"
-                        placeholder="Search events...">
+            <option value="za">
 
-                </div>
+              Z-A
 
-            </div>
+            </option>
 
-            <!-- FILTERS -->
-
-            <div class="col-lg-4">
-
-                <div class="filter-buttons">
-
-                    <button class="filter-btn active"
-                            data-category="All">
-
-                        All
-
-                    </button>
-
-                    <button class="filter-btn"
-                            data-category="Workshop">
-
-                        Workshop
-
-                    </button>
-
-                    <button class="filter-btn"
-                            data-category="Competition">
-
-                        Competition
-
-                    </button>
-
-                    <button class="filter-btn"
-                            data-category="Seminar">
-
-                        Seminar
-
-                    </button>
-
-                </div>
-
-            </div>
-
-            <!-- SORT -->
-
-            <div class="col-lg-3">
-
-                <select
-                    id="sortSelect"
-                    class="form-select">
-
-                    <option value="default">
-
-                        Sort Events
-
-                    </option>
-
-                    <option value="az">
-
-                        A-Z
-
-                    </option>
-
-                    <option value="za">
-
-                        Z-A
-
-                    </option>
-
-                </select>
-
-            </div>
+          </select>
 
         </div>
 
+      </div>
+
     </div>
 
-</section>
+  </section>
 
-<div class="results-count mb-4">
+  <div class="results-count mb-4">
 
     <span id="resultsCount">
 
     </span>
 
-</div>
-<!-- EVENTS LIST -->
-<!-- ================= EVENTS GRID ================= -->
-<section class="events-grid-section">
+  </div>
+  <!-- EVENTS LIST -->
+  <!-- ================= EVENTS GRID ================= -->
+  <section class="events-grid-section">
 
     <div class="container">
 
-        <div class="row g-4" id="eventsContainer">
+      <div class="row g-4" id="eventsContainer">
 
-        </div>
+      </div>
 
     </div>
 
-</section>
+  </section>
 
-<!-- ================= EVENT MODAL ================= -->
+  <!-- ================= EVENT MODAL ================= -->
 
-<div class="modal fade"
-     id="eventModal"
-     tabindex="-1">
+  <div class="modal fade" id="eventModal" tabindex="-1">
 
     <div class="modal-dialog modal-lg modal-dialog-centered">
 
-        <div class="modal-content event-modal">
+      <div class="modal-content event-modal">
 
-            <div class="modal-header">
+        <div class="modal-header">
 
-                <h4 id="modalTitle"></h4>
+          <h4 id="modalTitle"></h4>
 
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
-
-            </div>
-
-            <div class="modal-body">
-
-                <img id="modalImage"
-                     class="img-fluid rounded mb-4"
-                     alt="">
-
-                <div class="event-meta">
-
-                    <p>
-                        <strong>Date:</strong>
-                        <span id="modalDate"></span>
-                    </p>
-
-                    <p>
-                        <strong>Venue:</strong>
-                        <span id="modalVenue"></span>
-                    </p>
-
-                    <p>
-                        <strong>Category:</strong>
-                        <span id="modalCategory"></span>
-                    </p>
-
-                </div>
-
-                <p id="modalDescription"></p>
-
-            </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          </button>
 
         </div>
 
-    </div>
+        <div class="modal-body">
 
-</div>
+          <img id="modalImage" class="img-fluid rounded mb-4" alt="">
 
-<!-- ================= FOOTER ================= -->
+          <div class="event-meta">
 
-<footer class="footer-section">
+            <p>
+              <strong>Date:</strong>
+              <span id="modalDate"></span>
+            </p>
 
-  <div class="container">
+            <p>
+              <strong>Venue:</strong>
+              <span id="modalVenue"></span>
+            </p>
 
-    <div class="row g-5">
-
-      <!-- ================= BRAND ================= -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <a class="footer-brand"
-           href="#">
-
-          <div class="logo-box">
-
-            <i class="bi bi-cpu-fill"></i>
+            <p>
+              <strong>Category:</strong>
+              <span id="modalCategory"></span>
+            </p>
 
           </div>
 
-          <span>
-
-            CompApps
-
-          </span>
-
-        </a>
-
-        <p class="footer-text">
-
-          Empowering students with modern
-          technology skills, practical learning,
-          innovation, and real-world software development experience.
-
-        </p>
-
-        <!-- SOCIAL -->
-
-        <div class="footer-social">
-
-          <a href="#">
-
-            <i class="bi bi-facebook"></i>
-
-          </a>
-
-          <a href="#">
-
-            <i class="bi bi-instagram"></i>
-
-          </a>
-
-          <a href="#">
-
-            <i class="bi bi-linkedin"></i>
-
-          </a>
-
-          <a href="#">
-
-            <i class="bi bi-github"></i>
-
-          </a>
+          <p id="modalDescription"></p>
 
         </div>
 
       </div>
-
-      <!-- ================= QUICK LINKS ================= -->
-
-      <div class="col-lg-2 col-md-6">
-
-        <h5 class="footer-title">
-
-          Quick Links
-
-        </h5>
-
-        <ul class="footer-links">
-
-          <li>
-            <a href="/index.html">
-              Home
-            </a>
-          </li>
-
-          <li>
-            <a href="/about.html">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="/events.html">
-              Events
-            </a>
-          </li>
-
-          <li>
-            <a href="/gallery.html">
-              Gallery
-            </a>
-          </li>
-
-          <li>
-            <a href="/contact.html">
-              Contact
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <!-- ================= PROGRAMS ================= -->
-
-      <div class="col-lg-3 col-md-6">
-
-        <h5 class="footer-title">
-
-          Programs
-
-        </h5>
-
-        <ul class="footer-links">
-
-          <li>
-            <a href="#">
-              BCA
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              MCA
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              BCA (Hons)
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              Workshops
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              Certifications
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <!-- ================= CONTACT ================= -->
-
-      <div class="col-lg-3 col-md-6">
-
-        <h5 class="footer-title">
-
-          Contact Info
-
-        </h5>
-
-        <div class="footer-contact">
-
-          <div class="footer-contact-item">
-
-            <i class="bi bi-geo-alt-fill"></i>
-
-            <span>
-              Bengaluru, India
-            </span>
-
-          </div>
-
-          <div class="footer-contact-item">
-
-            <i class="bi bi-envelope-fill"></i>
-
-            <span>
-              compapps@college.edu
-            </span>
-
-          </div>
-
-          <div class="footer-contact-item">
-
-            <i class="bi bi-telephone-fill"></i>
-
-            <span>
-              +91 98765 43210
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- ================= COPYRIGHT ================= -->
-
-    <div class="footer-bottom">
-
-      <p>
-
-        © 2026 CompApps Department.
-        All Rights Reserved.
-
-      </p>
 
     </div>
 
   </div>
 
-</footer>
+  <!-- ================= FOOTER ================= -->
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- AOS Animation -->
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <footer class="footer-section">
 
-<script>
-AOS.init({
-    duration: 900,
-    once: true
-});
-</script>
-<script src="js/theme.js"></script>
-<script src="js/events.js"></script>
+    <div class="container">
+
+      <div class="row g-5">
+
+        <!-- ================= BRAND ================= -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <a class="footer-brand" href="#">
+
+            <div class="logo-box">
+
+              <i class="bi bi-cpu-fill"></i>
+
+            </div>
+
+            <span>
+
+              CompApps
+
+            </span>
+
+          </a>
+
+          <p class="footer-text">
+
+            Empowering students with modern
+            technology skills, practical learning,
+            innovation, and real-world software development experience.
+
+          </p>
+
+          <!-- SOCIAL -->
+
+          <div class="footer-social">
+
+            <a href="#">
+
+              <i class="bi bi-facebook"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-instagram"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-linkedin"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-github"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- ================= QUICK LINKS ================= -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <h5 class="footer-title">
+
+            Quick Links
+
+          </h5>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="events.html">
+                Events
+              </a>
+            </li>
+
+            <li>
+              <a href="gallery.html">
+                Gallery
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- ================= PROGRAMS ================= -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="footer-title">
+
+            Programs
+
+          </h5>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="#">
+                BCA
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                MCA
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                BCA (Hons)
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Workshops
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Certifications
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- ================= CONTACT ================= -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="footer-title">
+
+            Contact Info
+
+          </h5>
+
+          <div class="footer-contact">
+
+            <div class="footer-contact-item">
+
+              <i class="bi bi-geo-alt-fill"></i>
+
+              <span>
+                Bengaluru, India
+              </span>
+
+            </div>
+
+            <div class="footer-contact-item">
+
+              <i class="bi bi-envelope-fill"></i>
+
+              <span>
+                compapps@college.edu
+              </span>
+
+            </div>
+
+            <div class="footer-contact-item">
+
+              <i class="bi bi-telephone-fill"></i>
+
+              <span>
+                +91 98765 43210
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ================= COPYRIGHT ================= -->
+
+      <div class="footer-bottom">
+
+        <p>
+
+          © 2026 CompApps Department.
+          All Rights Reserved.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <button id="scrollTopBtn">
+
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true
+    });
+  </script>
+  <script src="js/theme.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/common.js"></script>
 </body>
+
 </html>

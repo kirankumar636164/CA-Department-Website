@@ -106,8 +106,7 @@
       data-bs-pause="false" data-bs-touch="true">
 
       <!-- INDICATORS -->
-      <div>
-
+      <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
 
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -455,7 +454,7 @@
 
             <div class="event-card">
 
-              <img src="assets/images/events/hackathon.jfif" alt="">
+              <img src="assets/images/events/hackathon1.jfif" alt="">
 
               <div class="event-content">
 
@@ -762,7 +761,7 @@
   </section>
 
   <!-- ================= CONTACT SECTION ================= -->
-
+  
   <section id="contact" class="contact-section">
 
     <div class="container">
@@ -840,8 +839,7 @@
               <div class="col-md-6">
 
                 <input type="text" id="name" class="form-control" placeholder="Full Name">
-
-                <small class="error"></small>
+                <small class="error" id="nameError"></small>
 
               </div>
 
@@ -850,8 +848,7 @@
               <div class="col-md-6">
 
                 <input type="email" id="email" class="form-control" placeholder="Email Address">
-
-                <small class="error"></small>
+                <small class="error" id="emailError"></small>
 
               </div>
 
@@ -860,8 +857,7 @@
               <div class="col-md-6">
 
                 <input type="text" id="phone" class="form-control" placeholder="Phone Number">
-
-                <small class="error"></small>
+                <small class="error" id="phoneError"></small>
 
               </div>
 
@@ -881,7 +877,7 @@
 
                 </select>
 
-                <small class="error"></small>
+                <small class="error" id="courseError"></small>
 
               </div>
 
@@ -891,7 +887,8 @@
 
                 <textarea id="message" rows="5" class="form-control" placeholder="Your Message"></textarea>
 
-                <small class="error"></small>
+                <small id="messageCount">0 / 500</small>
+                <small class="error" id="messageError"></small>
 
               </div>
 
@@ -918,431 +915,262 @@
     </div>
 
   </section>
-<!-- ================= FOOTER ================= -->
+  <!-- ================= FOOTER ================= -->
 
-<footer class="footer-section">
+  <footer class="footer-section">
+    <div id="successMessage" class="alert alert-success d-none">
 
-  <div class="container">
-
-    <div class="row g-5">
-
-      <!-- ================= BRAND ================= -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <a class="footer-brand"
-           href="#">
-
-          <div class="logo-box">
-
-            <i class="bi bi-cpu-fill"></i>
-
-          </div>
-
-          <span>
-
-            CompApps
-
-          </span>
-
-        </a>
-
-        <p class="footer-text">
-
-          Empowering students with modern
-          technology skills, practical learning,
-          innovation, and real-world software development experience.
-
-        </p>
-
-        <!-- SOCIAL -->
-
-        <div class="footer-social">
-
-          <a href="#">
-
-            <i class="bi bi-facebook"></i>
-
-          </a>
-
-          <a href="#">
-
-            <i class="bi bi-instagram"></i>
-
-          </a>
-
-          <a href="#">
-
-            <i class="bi bi-linkedin"></i>
-
-          </a>
-
-          <a href="#">
-
-            <i class="bi bi-github"></i>
-
-          </a>
-
-        </div>
-
-      </div>
-
-      <!-- ================= QUICK LINKS ================= -->
-
-      <div class="col-lg-2 col-md-6">
-
-        <h5 class="footer-title">
-
-          Quick Links
-
-        </h5>
-
-        <ul class="footer-links">
-
-          <li>
-            <a href="#heroCarousel">
-              Home
-            </a>
-          </li>
-
-          <li>
-            <a href="#about">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="#events">
-              Events
-            </a>
-          </li>
-
-          <li>
-            <a href="#gallery">
-              Gallery
-            </a>
-          </li>
-
-          <li>
-            <a href="#contact">
-              Contact
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <!-- ================= PROGRAMS ================= -->
-
-      <div class="col-lg-3 col-md-6">
-
-        <h5 class="footer-title">
-
-          Programs
-
-        </h5>
-
-        <ul class="footer-links">
-
-          <li>
-            <a href="#">
-              BCA
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              MCA
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              BCA (Hons)
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              Workshops
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              Certifications
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <!-- ================= CONTACT ================= -->
-
-      <div class="col-lg-3 col-md-6">
-
-        <h5 class="footer-title">
-
-          Contact Info
-
-        </h5>
-
-        <div class="footer-contact">
-
-          <div class="footer-contact-item">
-
-            <i class="bi bi-geo-alt-fill"></i>
-
-            <span>
-              Bengaluru, India
-            </span>
-
-          </div>
-
-          <div class="footer-contact-item">
-
-            <i class="bi bi-envelope-fill"></i>
-
-            <span>
-              compapps@college.edu
-            </span>
-
-          </div>
-
-          <div class="footer-contact-item">
-
-            <i class="bi bi-telephone-fill"></i>
-
-            <span>
-              +91 98765 43210
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- ================= COPYRIGHT ================= -->
-
-    <div class="footer-bottom">
-
-      <p>
-
-        © 2026 CompApps Department.
-        All Rights Reserved.
-
-      </p>
-
-    </div>
+    Form submitted successfully!
 
   </div>
 
-</footer>
+    <div class="container">
+
+      <div class="row g-5">
+
+        <!-- ================= BRAND ================= -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <a class="footer-brand" href="#">
+
+            <div class="logo-box">
+
+              <i class="bi bi-cpu-fill"></i>
+
+            </div>
+
+            <span>
+
+              CompApps
+
+            </span>
+
+          </a>
+
+          <p class="footer-text">
+
+            Empowering students with modern
+            technology skills, practical learning,
+            innovation, and real-world software development experience.
+
+          </p>
+
+          <!-- SOCIAL -->
+
+          <div class="footer-social">
+
+            <a href="#">
+
+              <i class="bi bi-facebook"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-instagram"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-linkedin"></i>
+
+            </a>
+
+            <a href="#">
+
+              <i class="bi bi-github"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- ================= QUICK LINKS ================= -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <h5 class="footer-title">
+
+            Quick Links
+
+          </h5>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="#heroCarousel">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="#events">
+                Events
+              </a>
+            </li>
+
+            <li>
+              <a href="#gallery">
+                Gallery
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- ================= PROGRAMS ================= -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="footer-title">
+
+            Programs
+
+          </h5>
+
+          <ul class="footer-links">
+
+            <li>
+              <a href="#">
+                BCA
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                MCA
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                BCA (Hons)
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Workshops
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Certifications
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- ================= CONTACT ================= -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h5 class="footer-title">
+
+            Contact Info
+
+          </h5>
+
+          <div class="footer-contact">
+
+            <div class="footer-contact-item">
+
+              <i class="bi bi-geo-alt-fill"></i>
+
+              <span>
+                Bengaluru, India
+              </span>
+
+            </div>
+
+            <div class="footer-contact-item">
+
+              <i class="bi bi-envelope-fill"></i>
+
+              <span>
+                compapps@college.edu
+              </span>
+
+            </div>
+
+            <div class="footer-contact-item">
+
+              <i class="bi bi-telephone-fill"></i>
+
+              <span>
+                +91 98765 43210
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ================= COPYRIGHT ================= -->
+
+      <div class="footer-bottom">
+
+        <p>
+
+          © 2026 CompApps Department.
+          All Rights Reserved.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Scroll To Top Button -->
+
+  <button id="scrollTopBtn">
+
+    <i class="bi bi-arrow-up"></i>
+
+  </button>
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-
-/* ================= ACTIVE NAVBAR ================= */
-
-const sections =
-  document.querySelectorAll("section");
-
-const navLinks =
-  document.querySelectorAll(".nav-link");
-
-window.addEventListener("scroll", () => {
-
-  let current = "";
-
-  sections.forEach(section => {
-
-    const sectionTop =
-      section.offsetTop - 120;
-
-    if(pageYOffset >= sectionTop){
-
-      current =
-        section.getAttribute("id");
-
-    }
-
-  });
-
-  navLinks.forEach(link => {
-
-    link.classList.remove("active");
-
-    if(link.getAttribute("href")
-      === `#${current}`){
-
-      link.classList.add("active");
-
-    }
-
-  });
-
-});
-
-/* ================= MOBILE NAVBAR CLOSE ================= */
-
-const navCollapse =
-  document.querySelector(".navbar-collapse");
-
-const bsCollapse =
-  new bootstrap.Collapse(navCollapse, {
-    toggle: false
-  });
-
-navLinks.forEach(link => {
-
-  link.addEventListener("click", () => {
-
-    if(window.innerWidth < 992){
-
-      bsCollapse.hide();
-
-    }
-
-  });
-
-});
-
-</script>
-
-  <!-- MAIN SCRIPT -->
   <script>
 
-    const themeToggle = document.getElementById("themeToggle");
 
-    themeToggle.addEventListener("click", () => {
-
-      const html = document.documentElement;
-
-      const currentTheme = html.getAttribute("data-theme");
-
-      const newTheme =
-        currentTheme === "dark"
-          ? "light"
-          : "dark";
-
-      html.setAttribute("data-theme", newTheme);
-
-      // ICON SWITCH
-      themeToggle.innerHTML =
-        newTheme === "dark"
-          ? '<i class="bi bi-moon-stars-fill"></i>'
-          : '<i class="bi bi-sun-fill"></i>';
-
-    });
-
-    const form = document.getElementById("contactForm");
-
-    form.addEventListener("submit", function (e) {
-
-      e.preventDefault();
-
-      let valid = true;
-
-      // INPUTS
-
-      const name = document.getElementById("name");
-      const email = document.getElementById("email");
-      const phone = document.getElementById("phone");
-      const course = document.getElementById("course");
-      const message = document.getElementById("message");
-
-      // CLEAR ERRORS
-
-      document.querySelectorAll(".error")
-        .forEach(el => el.innerText = "");
-
-      // NAME
-
-      if (name.value.trim().length < 3) {
-
-        showError(name, "Enter valid name");
-        valid = false;
-
-      }
-
-      // EMAIL
-
-      const emailPattern =
-        /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-      if (!email.value.match(emailPattern)) {
-
-        showError(email, "Enter valid email");
-        valid = false;
-
-      }
-
-      // PHONE
-
-      const phonePattern = /^[0-9]{10}$/;
-
-      if (!phone.value.match(phonePattern)) {
-
-        showError(phone, "Enter 10 digit number");
-        valid = false;
-
-      }
-
-      // COURSE
-
-      if (course.value === "") {
-
-        showError(course, "Select course");
-        valid = false;
-
-      }
-
-      // MESSAGE
-
-      if (message.value.trim().length < 10) {
-
-        showError(message,
-          "Message should be minimum 10 characters");
-
-        valid = false;
-
-      }
-
-      // SUCCESS
-
-      if (valid) {
-
-        alert("Form Submitted Successfully!");
-
-        form.reset();
-
-      }
-
-    });
-
-    // ERROR FUNCTION
-
-    function showError(input, message) {
-
-      input.nextElementSibling.innerText = message;
-
-    }
-
-
+  </script>
+  <script>
     AOS.init({
       duration: 1000,
       once: true
     });
 
   </script>
+  <script src="js/theme.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>

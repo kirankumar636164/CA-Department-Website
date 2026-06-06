@@ -41,9 +41,7 @@
 }
 
 html {
-
   scroll-behavior: smooth;
-
 }
 
 /* ================= BODY ================= */
@@ -69,6 +67,7 @@ body {
   padding: 14px 0;
 
   transition: 0.3s ease;
+  z-index: 1050;
 }
 
 /* LOGO */
@@ -170,17 +169,29 @@ body {
 /* MOBILE TOGGLE */
 
 .navbar-toggler {
+
+  border: none !important;
+
+  box-shadow: none !important;
+
   color: var(--text);
 
-  font-size: 1.8rem;
+  font-size: 2rem;
+
+}
+
+.navbar-toggler i {
+
+  color: var(--text) !important;
+
+  font-size: 2rem;
+
 }
 
 .navbar-toggler:focus {
   box-shadow: none;
 }
-.navbar-toggler i {
-  color: var(--text);
-}
+
 
 /* THEME BUTTON */
 
@@ -220,6 +231,8 @@ body {
     padding: 20px;
 
     border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .nav-link {
@@ -322,7 +335,6 @@ body {
 /* ================= HERO BUTTONS ================= */
 
 .hero-buttons {
-
   margin-top: 30px;
 
   display: flex;
@@ -334,11 +346,9 @@ body {
   gap: 18px;
 
   flex-wrap: wrap;
-
 }
 
 .hero-buttons .btn {
-
   min-width: 180px;
 
   padding: 14px 26px;
@@ -348,65 +358,52 @@ body {
   border-radius: 12px;
 
   transition: 0.3s ease;
-
 }
 
 /* PRIMARY */
 
 .hero-buttons .btn-primary {
-
   background: var(--accent);
 
   border: none;
 
   color: #000;
-
 }
 
 /* LIGHT BUTTON */
 
 .hero-buttons .btn-light {
-
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.12);
 
   backdrop-filter: blur(10px);
 
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 
   color: #fff;
-
 }
 
 /* HOVER */
 
 .hero-buttons .btn:hover {
-
   transform: translateY(-4px);
-
 }
 
 /* MOBILE */
 
 @media (max-width: 768px) {
-
   .hero-buttons {
-
     flex-direction: column;
 
     gap: 14px;
 
     width: 100%;
-
   }
 
   .hero-buttons .btn {
-
     width: 100%;
 
     max-width: 320px;
-
   }
-
 }
 
 /* INDICATORS */
@@ -874,29 +871,24 @@ body {
 /* ================= GALLERY SECTION ================= */
 
 .gallery-section {
-
   padding: 100px 0;
 
   background: var(--bg);
-
 }
 
 /* GRID */
 
 .gallery-grid {
-
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
 
   gap: 20px;
-
 }
 
 /* ITEM */
 
 .gallery-item {
-
   position: relative;
 
   overflow: hidden;
@@ -906,113 +898,84 @@ body {
   height: 280px;
 
   cursor: pointer;
-
 }
 
 /* LARGE ITEM */
 
 .gallery-item.large {
-
   grid-column: span 2;
-
 }
 
 /* IMAGE */
 
 .gallery-item img {
-
   width: 100%;
   height: 100%;
 
   object-fit: cover;
 
   transition: transform 0.6s ease;
-
 }
 
 /* OVERLAY */
 
 .gallery-item::before {
-
   content: "";
 
   position: absolute;
 
   inset: 0;
 
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.55),
-    transparent
-  );
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent);
 
   opacity: 0;
 
   transition: 0.4s ease;
 
   z-index: 1;
-
 }
 
 /* HOVER */
 
 .gallery-item:hover img {
-
   transform: scale(1.08);
-
 }
 
 .gallery-item:hover::before {
-
   opacity: 1;
-
 }
 
 /* BUTTON */
 
 .gallery-btn {
-
   padding: 12px 28px;
 
   font-weight: 600;
-
 }
 
 /* MOBILE */
 
 @media (max-width: 991px) {
-
   .gallery-grid {
-
     grid-template-columns: repeat(2, 1fr);
-
   }
 
   .gallery-item.large {
-
     grid-column: span 2;
-
   }
-
 }
 
 @media (max-width: 768px) {
-
   .gallery-grid {
-
     grid-template-columns: 1fr;
-
   }
 
   .gallery-item,
   .gallery-item.large {
-
     grid-column: span 1;
 
     height: 240px;
-
   }
-
 }
 
 /* ================= CONTACT SECTION ================= */
@@ -1121,9 +1084,7 @@ body {
 /* SELECT OPTION */
 
 .form-control option {
-
   color: #000;
-
 }
 
 /* FOCUS */
@@ -1140,11 +1101,9 @@ body {
 
 textarea.form-control,
 select.form-control {
-
   resize: none;
 
   appearance: none;
-
 }
 
 /* BUTTON */
@@ -1190,26 +1149,18 @@ select.form-control {
 /* ================= FOOTER ================= */
 
 .footer-section {
-
   padding: 100px 0 30px;
 
-  background:
-    linear-gradient(
-      to top,
-      rgba(0,0,0,0.95),
-      rgba(0,0,0,0.85)
-    );
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.85));
 
   position: relative;
 
   overflow: hidden;
-
 }
 
 /* BRAND */
 
 .footer-brand {
-
   display: flex;
 
   align-items: center;
@@ -1219,35 +1170,29 @@ select.form-control {
   text-decoration: none;
 
   margin-bottom: 25px;
-
 }
 
 .footer-brand span {
-
   font-size: 1.6rem;
 
   font-weight: 700;
 
   color: #fff;
-
 }
 
 /* TEXT */
 
 .footer-text {
-
   color: #b5b5b5;
 
   line-height: 1.8;
 
   margin-bottom: 30px;
-
 }
 
 /* TITLES */
 
 .footer-title {
-
   color: #fff;
 
   font-weight: 700;
@@ -1255,13 +1200,11 @@ select.form-control {
   margin-bottom: 25px;
 
   position: relative;
-
 }
 
 /* UNDERLINE */
 
 .footer-title::after {
-
   content: "";
 
   position: absolute;
@@ -1275,30 +1218,24 @@ select.form-control {
   background: var(--accent);
 
   border-radius: 20px;
-
 }
 
 /* LINKS */
 
 .footer-links {
-
   list-style: none;
 
   padding: 0;
   margin: 0;
-
 }
 
 .footer-links li {
-
   margin-bottom: 14px;
-
 }
 
 /* LINK */
 
 .footer-links a {
-
   color: #b5b5b5;
 
   text-decoration: none;
@@ -1306,33 +1243,27 @@ select.form-control {
   transition: 0.3s ease;
 
   position: relative;
-
 }
 
 /* HOVER */
 
 .footer-links a:hover {
-
   color: var(--accent);
 
   padding-left: 8px;
-
 }
 
 /* SOCIAL */
 
 .footer-social {
-
   display: flex;
 
   gap: 15px;
-
 }
 
 /* ICON */
 
 .footer-social a {
-
   width: 45px;
   height: 45px;
 
@@ -1342,46 +1273,40 @@ select.form-control {
 
   border-radius: 12px;
 
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 
   color: #fff;
 
   font-size: 1.1rem;
 
   transition: 0.4s ease;
-
 }
 
 /* ICON HOVER */
 
 .footer-social a:hover {
-
   background: var(--accent);
 
   color: #000;
 
   transform: translateY(-6px);
 
-  box-shadow: 0 10px 25px rgba(0,229,255,0.3);
-
+  box-shadow: 0 10px 25px rgba(0, 229, 255, 0.3);
 }
 
 /* CONTACT */
 
 .footer-contact {
-
   display: flex;
 
   flex-direction: column;
 
   gap: 18px;
-
 }
 
 /* CONTACT ITEM */
 
 .footer-contact-item {
-
   display: flex;
 
   align-items: center;
@@ -1389,78 +1314,118 @@ select.form-control {
   gap: 14px;
 
   color: #b5b5b5;
-
 }
 
 /* ICON */
 
 .footer-contact-item i {
-
   color: var(--accent);
 
   font-size: 1.1rem;
-
 }
 
 /* BOTTOM */
 
 .footer-bottom {
-
   margin-top: 70px;
 
   padding-top: 25px;
 
-  border-top:
-    1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 
   text-align: center;
-
 }
 
 /* COPYRIGHT */
 
 .footer-bottom p {
-
   color: #999;
 
   margin: 0;
-
 }
 
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-
   .footer-section {
-
     text-align: center;
-
   }
 
   .footer-brand {
-
     justify-content: center;
-
   }
 
   .footer-social {
-
     justify-content: center;
-
   }
 
   .footer-contact-item {
-
     justify-content: center;
-
   }
 
   .footer-title::after {
-
     left: 50%;
 
     transform: translateX(-50%);
-
   }
+}
 
+/* =====================================
+   SCROLL TO TOP BUTTON
+===================================== */
+
+#scrollTopBtn {
+  position: fixed;
+
+  bottom: 25px;
+
+  right: 25px;
+
+  width: 50px;
+
+  height: 50px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: var(--accent);
+
+  color: #000;
+
+  font-size: 1.3rem;
+
+  cursor: pointer;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform: translateY(20px);
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+#scrollTopBtn:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 25px var(--accent-glow);
 }
