@@ -1,62 +1,88 @@
-# 🚀 CompApps Department Website
+# Computer Applications Department Website
 
-## 📌 Overview
+## Project Overview
 
-The **CompApps Department Website** is a modern, responsive web application designed to showcase the activities, achievements, and opportunities within the Computer Applications Department.
+The Computer Applications Department Website is a responsive multi-page website developed to showcase the activities, achievements, events, gallery, and contact information of a Computer Applications Department.
 
-This project highlights:
-
-* Department overview and mission
-* Events and workshops
-* Gallery of activities
-* Student engagement (Join/Contact)
-* Clean UI with dark/light theme support
-
-The goal of this website is to provide a **professional, user-friendly platform** for students and visitors to explore the department.
+The website is designed with a modern user interface and provides an interactive experience through dynamic components, responsive layouts, theme switching, event filtering, gallery previews, and form validation.
 
 ---
 
-## ✨ Features
+## Features
 
-* 🌗 Dark / Light Mode Toggle
-* 📱 Fully Responsive Design (Mobile + Desktop)
-* 🎬 Smooth Scroll Animations (AOS)
-* 🧩 Reusable Components (Navbar & Footer)
-* 🖼️ Interactive Gallery with Hover Effects
-* 📅 Event Listings with Clean UI
-* 📬 Contact / Join Form Section
-* 🎨 Modern UI with Glassmorphism & Glow Effects
+### Home Page
+
+* Responsive navigation bar
+* Dark/Light theme toggle
+* Hero carousel section
+* About department preview
+* Events preview
+* Gallery preview
+* Contact section
+* Footer section
+* Scroll-to-top button
+
+### About Page
+
+* Department introduction
+* Vision and Mission
+* Department statistics
+* Faculty information
+* Department achievements
+* Responsive design
+
+### Events Page
+
+* Events listing
+* Event search functionality
+* Event category filtering
+* Event sorting
+* Event details modal popup
+* Responsive event cards
+
+### Gallery Page
+
+* Gallery image grid
+* Image filtering by category
+* Lightbox image preview
+* Featured memories section
+* Responsive gallery layout
+
+### Contact Page
+
+* Contact information cards
+* Contact form
+* Front-end form validation
+* Character counter
+* Success message display
+* Responsive design
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-### 🔹 Frontend
+### Frontend
 
 * HTML5
 * CSS3
-* JavaScript (Vanilla JS)
+* JavaScript (ES6)
 
-### 🔹 Frameworks & Libraries
+### Frameworks and Libraries
 
-* Bootstrap 5 (Layout & Responsiveness)
+* Bootstrap 5.3
 * Bootstrap Icons
-* AOS (Animate On Scroll Library)
+* AOS (Animate On Scroll)
 
-### 🔹 Concepts Implemented
+### Deployment
 
-* Component-based structure (Navbar & Footer loading)
-* CSS Variables (Design System)
-* Theme Switching (Dark/Light Mode)
-* Responsive Grid System
-* Modular CSS Architecture
+* GitHub Pages
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-```
-compapps-website/
+```text
+Project Root
 │
 ├── index.html
 ├── about.html
@@ -64,101 +90,167 @@ compapps-website/
 ├── gallery.html
 ├── contact.html
 │
-├── components/
-│   ├── navbar.html
-│   └── footer.html
-│
-├── css/
+├── css
 │   ├── style.css
 │   ├── components.css
-│   └── pages/
+│   └── pages
 │       ├── about.css
 │       ├── events.css
 │       ├── gallery.css
 │       └── contact.css
 │
-├── js/
-│   ├── main.js
-│   └── theme.js
+├── js
+│   ├── common.js
+│   ├── theme.js
+│   ├── events.js
+│   ├── gallery.js
+│   └── contact.js
 │
-├── assets/
-│   ├── images/
-│   └── video/
+├── assets
+│   ├── images
+│   ├── video
+│   └── icons
 │
 └── README.md
 ```
 
 ---
 
-## ▶️ How to Run the Project
+## Interactive Features
 
-### ⚠️ Important
+The website includes the following interactive features:
 
-This project uses `fetch()` for loading components.
-So it **will NOT work if opened directly (file://)**.
-
----
-
-### ✅ Step 1: Extract the ZIP
-
-* Unzip the project folder
-
----
-
-### ✅ Step 2: Open with Live Server (Recommended)
-
-#### Option A (VS Code)
-
-1. Open folder in VS Code
-2. Install **Live Server Extension**
-3. Right click `index.html`
-4. Click **"Open with Live Server"**
+1. Dark/Light Theme Switching
+2. Responsive Navigation Menu
+3. Scroll-to-Top Button
+4. Event Search Functionality
+5. Event Filtering
+6. Event Sorting
+7. Event Details Modal
+8. Gallery Filtering
+9. Gallery Lightbox Preview
+10. Contact Form Validation
+11. Character Counter
+12. Hover Effects and Animations
 
 ---
 
-### ✅ Option B (Node.js)
+## Responsive Design
 
-If you have Node installed:
+The website is fully responsive and supports:
 
-```bash
-npx serve
-```
+* Desktop Screens
+* Laptop Screens
+* Tablets
+* Mobile Devices
 
-Then open the provided localhost link.
-
----
-
-## 👨‍💻 Developer Details
-
-**Name:** Kiran Kumar B
-**Role:** MCA Student & MERN Stack Developer
-**Focus:** Building scalable, modern web applications
+Bootstrap Grid System and CSS Media Queries have been used to ensure responsiveness.
 
 ---
 
-## 🎯 Project Purpose
+## How to Run the Project
 
-This project was built to:
+### Method 1: Open Directly
 
-* Practice real-world frontend development
-* Implement clean architecture and reusable components
-* Develop strong UI/UX design skills
-* Transition from basic projects to structured applications
+1. Extract the ZIP file.
+2. Open the project folder.
+3. Double-click `index.html`.
+
+The website will open in your default browser.
+
+### Method 2: Using VS Code Live Server (Recommended)
+
+1. Open the project folder in Visual Studio Code.
+2. Install the Live Server extension.
+3. Right-click on `index.html`.
+4. Select **Open with Live Server**.
+
+This method is recommended for development purposes.
+
+---
+
+## Important Notes for Evaluators
+
+The website is designed to run as a static front-end project.
+
+No backend server or database is required.
+
+All features including:
+
+* Theme switching
+* Event filtering
+* Event sorting
+* Gallery filtering
+* Modal popups
+* Contact form validation
+
+are implemented using client-side JavaScript.
+
+The contact form performs front-end validation only and does not store or submit data to a server.
 
 ---
 
-## 📌 Future Improvements
+## Browser Compatibility
 
-* Form validation with backend integration
-* Event filtering system
-* Gallery lightbox view
-* Admin dashboard (advanced feature)
-* Deployment (Netlify / Vercel)
+Tested on:
+
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+
+Latest browser versions are recommended.
+
+---
+
+## Deployment Link
+
+GitHub Pages URL:
+
+[Add Your Deployment URL Here]
 
 ---
 
-## ⭐ Final Note
+## GitHub Repository
 
-This project represents a transition from **basic web development** to **structured, scalable frontend architecture**.
+Repository URL:
+
+[Add Your GitHub Repository URL Here]
 
 ---
+
+## Developer Information
+
+Name: Kiran Kumar B
+
+Program: Master of Computer Applications (MCA)
+
+Role: Front-End Developer
+
+Responsibilities:
+
+* UI/UX Design
+* Responsive Layout Development
+* JavaScript Interactivity
+* Theme System Development
+* Event Management Module
+* Gallery Module
+* Contact Form Validation
+* GitHub Deployment
+
+---
+
+## Future Enhancements
+
+* Backend Integration
+* Database Connectivity
+* Event Registration System
+* Admin Dashboard
+* User Authentication
+* Online Contact Form Submission
+* Dynamic Content Management
+
+---
+
+## Conclusion
+
+This project demonstrates the development of a modern responsive department website using HTML, CSS, JavaScript, Bootstrap, and GitHub Pages. The website provides an engaging user experience through responsive layouts, interactive components, theme switching, animations, and form validation while maintaining a clean and organized project structure.
